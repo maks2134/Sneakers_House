@@ -1,13 +1,227 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Inter";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: inherit;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui;
+  background-color: #e7f6ff;
+}
+
+.wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1440px;
+  margin: 50px auto;
+}
+
+header {
+  border-bottom: 2px solid #EAEAEA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+header .headeLeft {
+  display: flex;
+  align-items: center;
+}
+header .headeLeft img {
+  margin-right: 15px;
+}
+header .headeLeft h3 {
+  text-transform: uppercase;
+}
+header .headeLeft p {
+  opacity: 5;
+  color: #9D9D9D;
+}
+header .headeLeft h3, header .headeLeft p {
+  margin: 0;
+}
+header .headerRight {
+  display: flex;
+}
+header .headerRight li {
+  margin-right: 30px;
+}
+header .headerRight li span {
+  color: #9D9D9D;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.content {
+  padding: 40px;
+}
+.content .sneakers {
+  display: flex;
+}
+.content h1 {
+  margin: 0;
+}
+
+.search-block {
+  border: 1px solid #F3F3F3;
+  display: flex;
+  border-radius: 10px;
+  padding: 13px;
+}
+.search-block input {
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.content-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.drawer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 450px;
+  height: 100%;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.drawer .items {
+  overflow: auto;
+  margin-bottom: 40px;
+}
+.drawer .carTotalBlock .greenButton {
+  position: relative;
+}
+.drawer .carTotalBlock .greenButton:hover img {
+  transform: translateX(5px);
+}
+.drawer .carTotalBlock .greenButton img {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  transition: transform 0.15s ease-in-out;
+}
+.drawer .carTotalBlock div {
+  flex: 1;
+  height: 1px;
+  border-bottom: 1px dashed #dfdfdf;
+  position: relative;
+  top: -4px;
+  margin: 0 7px;
+}
+.drawer .carTotalBlock ul {
+  display: block;
+  margin-bottom: 40px !important;
+}
+.drawer .carTotalBlock ul li {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.drawer h2 {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.drawer h2 img {
+  cursor: pointer;
+}
+.drawer .cartItem {
+  border: 1px solid #F3F3F3;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.drawer .cartItem .cartItemImg {
+  height: 70px;
+  width: 70px;
+  background-size: contain;
+  background-position: 0 10px;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+.drawer .blazer {
+  margin-right: 20px;
+}
+.drawer .cartInfo p {
+  margin: 0;
+  font-size: 16px;
+}
+.drawer .cartInfo b {
+  font-size: 14px;
+}
+.drawer .removeBtn {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.15s ease-in-out;
+}
+.drawer .removeBtn:hover {
+  opacity: 1;
+}
+
+.drawer_contain {
+  margin-bottom: 20px;
+}
+
+.items {
+  flex: 1;
+}
+
+.greenButton {
+  width: 100%;
+  background: #9DD558;
+  border-radius: 18px;
+  height: 55px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+.greenButton:hover {
+  background: #a9da6c;
+}
+.greenButton:active {
+  background: #91d044;
+}
+
+/*# sourceMappingURL=index.css.map */
